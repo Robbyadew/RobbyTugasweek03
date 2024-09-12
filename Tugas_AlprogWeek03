@@ -1,0 +1,58 @@
+nama = "Robby Ade Pratama"
+prodi = "S1 Teknologi Informasi"
+Npm = "2440506075"
+alamat = "Pringsurat Temanggung"
+hobi = "Futsal"
+email = "Robbyade13@gmail.com"
+
+print("Nama    :", nama)
+print("Prodi   :", prodi)
+print("Email   :", email)
+
+print("Nama    :", nama)
+print("Npm     :", Npm)
+print("Prodi   :", prodi)
+print("Alamat  :", alamat)
+
+with open('biodata.txt', 'w') as writefile:
+    writefile.write("Nama : " + nama + "\n")
+    writefile.write("Npm : " + Npm + "\n")
+    writefile.write("prodi : " + prodi + "\n")
+    writefile.write("alamat : " + alamat + "\n")
+
+print("Selamat datang di Toko Maju Jaya")
+print("Senin, 4 September 2023 12.05")
+print("")
+
+print("DAFTAR BELANJA:")
+item1 = "Sabun"
+item2 = "Shampo"
+item3 = "Mie instan"
+item4 = "Deterjen"
+harga1 = 10000
+harga2 = 15000
+harga3 = 5000
+harga4 = 17500
+
+total = harga1+harga2+harga3+harga4
+
+print(item1, '= Rp.' + str(harga1))
+print(item2, '= Rp.' + str(harga2))
+print(item3, '= Rp.' + str(harga3))
+print(item4, '= Rp.' + str(harga4))
+
+print("")
+print("Total Belanja = Rp." + str(total))
+print("")
+
+with open ( 'Kuitansi.txt' , 'w') as writefile:
+        writefile.write ( "Selamat datang di Toko Maju Jaya" + "\n")
+        writefile.write ( " \n" )
+        writefile.write ( "Kuitsnsi - 4 September 2023\n" )
+        writefile.write ( " \n" )
+        writefile.write ( item1+ " = Rp" + str(harga1) + "\n" )
+        writefile.write ( item2+ " = Rp " + str(harga2) + "\n" )
+        writefile.write ( item3+ " = Rp " + str(harga3) + "\n" )
+        writefile.write ( item4+ " = Rp " + str(harga4) + "\n" )
+        writefile.write ( " \n" )
+        writefile.write ( "Total Belanja =" + str(total))
